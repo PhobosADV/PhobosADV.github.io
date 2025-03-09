@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЧаВо | PXstudio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 class="title">PXstudio</h1>
+
+    <!-- Секция FAQ -->
+    <div class="faq-container">
+        <h2 class="faq-title">Часто задаваемые вопросы</h2>
+        <div class="faq">
+            <div class="faq-item">
+                <button class="faq-question">Как оформить заказ?</button>
+                <div class="faq-answer">
+                    <p>Просто нажмите кнопку "Заказать" и заполните форму.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Сколько стоит работа?</button>
+                <div class="faq-answer">
+                    <p>Цена зависит от выбранного тарифа. Подробности в разделе "Тарифы".</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Как долго выполняется заказ?</button>
+                <div class="faq-answer">
+                    <p>Сроки зависят от сложности работы. Обычно это занимает от 1 до 7 дней.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Можно ли внести изменения в заказ после его оформления?</button>
+                <div class="faq-answer">
+                    <p>Да, вы можете внести изменения на ранних этапах работы. Свяжитесь с нами для уточнения деталей.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Какие форматы файлов вы предоставляете?</button>
+                <div class="faq-answer">
+                    <p>Мы предоставляем работы в форматах PNG, GIF (для анимаций) и MP4 (для видео).</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Есть ли у вас скидки для постоянных клиентов?</button>
+                <div class="faq-answer">
+                    <p>Да, для постоянных клиентов мы предлагаем специальные скидки и бонусы.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">У меня не открываеться файл с вашей работой!</button>
+                <div class="faq-answer">
+                    <p>Для открытия файлов Png, Gif а так же Mp3 используються стандартный плеер Windows, данная проблема скорее всего вызвана неисправностью вашей системы.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 PXstudio. Все права защищены.</p>
+            <div class="footer-links">
+                <a href="faq.html" class="credits-link">ЧаВо</a>
+                <a href="credits.html" class="credits-link">Credits</a>
+                <a href="index.html" class="credits-link">Home page</a>
+            </div>
+        </div>
+        <img src="image/7.png" alt="Footer Image" class="footer-image">
+    </footer>
+
+    <script>
+        const faqQuestions = document.querySelectorAll(".faq-question");
+
+        faqQuestions.forEach(question => {
+            question.addEventListener("click", () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle("active");
+                question.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+</html>
